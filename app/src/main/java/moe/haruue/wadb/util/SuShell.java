@@ -17,6 +17,7 @@ public class SuShell {
     static {
         Shell.enableVerboseLogging = BuildConfig.DEBUG;
         Shell.setDefaultBuilder(Shell.Builder.create()
+                .setShell("/system/bin/peka")
                 .setFlags(Shell.FLAG_REDIRECT_STDERR)
                 .setTimeout(10));
     }
